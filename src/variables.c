@@ -282,7 +282,7 @@ void do_mptag( CHAR_DATA *ch, char *argument )
     else
     {
 	vd = make_variable(vtINT, vnum, arg2);
-	(int)vd->data = atoi(argument);
+	vd->data = atoi(argument);
     }
     vd->timer = exp;
     tag_char(victim, vd, 1);
@@ -628,7 +628,7 @@ void fread_variable(CHAR_DATA *ch, FILE *fp)
 			bug("Fread_variable: Type mismatch -- type(%d) != vtInt", pvd->type);
 		    else
 		    {
-			(int)pvd->data = fread_number(fp);
+			pvd->data = fread_number(fp);
 			fMatch = TRUE;
 		    }
 		    break;
@@ -650,7 +650,7 @@ void fread_variable(CHAR_DATA *ch, FILE *fp)
 			bug("Fread_variable: Type mismatch -- type(%d) != vtSTR", pvd->type);
 		    else
 		    {
-			(char *)pvd->data = fread_string_nohash(fp);
+			pvd->data = fread_string_nohash(fp);
 			fMatch = TRUE;
 		    }
 		    break;
