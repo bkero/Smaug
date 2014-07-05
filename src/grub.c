@@ -531,20 +531,17 @@ int rgrub_int_comp(const void *i, const void *j)
 return *(int*)i - *(int*)j;
 }
 
-void rgrub_help (CHAR_DATA *ch)
-{
-send_to_char( "Syntax:\n\r", ch);
-send_to_char( "rgrub <type> n lo hi -  type search.\n\r"
-   "   list room vnums between lo and hi that match n on <type> of
-search.\n\r", ch );
-send_to_char( "   e.g. rgrub st 6 901 969 - list all rooms in Olympus\n\r"
-   "      that are sectortype 6.\n\r", ch );
-send_to_char( "   e.g. rgrub st 2 - list all rooms sectortype 2.\n\r", ch );
-send_to_char( "   e.g. rgrub f nomob 901 969 - list all rooms in
-Olympus\n\r"
-   "      that are flagged nomon.\n\r", ch );
-send_to_char( "   e.g. rgrub f nomob - list all rooms flagged nomob.\n\r",
-ch );
+void rgrub_help (CHAR_DATA *ch) {
+  send_to_char( "Syntax:\n\r", ch);
+  send_to_char( "rgrub <type> n lo hi -  type search.\n\r"
+                "   list room vnums between lo and hi that "
+                "match n on <type> of search.\n\r", ch );
+  send_to_char( "   e.g. rgrub st 6 901 969 - list all rooms in Olympus\n\r"
+                                "      that are sectortype 6.\n\r", ch );
+  send_to_char( "   e.g. rgrub st 2 - list all rooms sectortype 2.\n\r", ch );
+  send_to_char( "   e.g. rgrub f nomob 901 969 - list all rooms in Olympus\n\r"
+                                "      that are flagged nomon.\n\r", ch );
+  send_to_char( "   e.g. rgrub f nomob - list all rooms flagged nomob.\n\r",ch );
 }
 
 void do_rgrub (CHAR_DATA *ch, char *argument)
