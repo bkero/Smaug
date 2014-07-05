@@ -1,37 +1,33 @@
-#! /bin/csh -f
+#!/bin/bash
 
 # Set the port number.
-set port = 4555
-if ( "$1" != "" ) set port="$1"
+PORT=${1:-4000}
 
 # Change to area directory.
-cd ../area
+pushd ../area
 
-# Set limits.
-nohup
-nice
-limit stack 1024k
-if ( -e shutdown.txt ) rm -f shutdown.txt
+NOHUP=true
+NICE=true
+ulimit -s 1024
+if [ -e shutdown.txt ]; then
+    rm -f shutdown.txt
+fi
 
-while ( 1 )
-    # If you want to have logs in a different directory,
-    #   change the 'set logfile' line to reflect the directory name.
-    set index = 1000
-    while ( 1 )
-	set logfile = ../log/$index.log
-	if ( ! -e $logfile ) break
-	@ index++
-    end
+I=1000
+while [ -e ../log/${I}.log ]; do
+	I=$(expr $I + 1)
+done
+LOGFILE=../log/${I}.log
 
-    # Record starting time
-    date > $logfile
-    date > ../area/boot.txt
+# Record starting time
+date > $LOGFILE
+date > ../area/boot.txt
 
-    # Record initial charges
-    # charges >> $logfile
+# Record initial charges
+# charges >> $logfile
 
-    # Run SMAUG.
-    ../src/smaug $port >&! $logfile
+# Run SMAUG.
+../src/smaug $PORT > $LOGFILE
 #    ../src/smaug >>&! $logfile
 
     # Record ending charges
@@ -43,9 +39,8 @@ while ( 1 )
 #    endif
 
     # Restart, giving old connections a chance to die.
-    if ( -e shutdown.txt ) then
+if [ -e shutdown.txt ]; then
 	rm -f shutdown.txt
-	exit 0
-    endif
-    sleep 15
-end
+fi
+popd
+exit 0
