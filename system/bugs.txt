@@ -1,0 +1,28 @@
+[*****] BUG: Fread_stance: fopen
+[*****] BUG: Fread_stance: fopen
+[*****] BUG: Fread_stance: fopen
+[*****] BUG: fread_word: EOF encountered on read.
+
+[*****] BUG: Cannot open members.dat for reading
+[*****] BUG: fread_word: EOF encountered on read.
+
+[*****] BUG: Cannot load house file: ~ÿ
+[*****] BUG: Fread_char: color muse invalid.
+[*****] BUG: Fread_char: color think invalid.
+[*****] BUG: Fread_obj: heart rhiamon rename incomplete object.
+[*****] BUG: Fread_obj: Gwvyrn's Wings Edmond incomplete object.
+[*****] BUG: Fread_obj: Edmond Leg rename incomplete object.
+[*****] BUG: Fread_obj: shirt edmond incomplete object.
+[*****] BUG: Fread_obj: incomplete object.
+[*****] BUG: Fread_obj: incomplete object.
+[*****] BUG: Fread_obj: mamaluke sword incomplete object.
+[*****] BUG: Fread_obj: incomplete object.
+[*****] BUG: Fread_obj: incomplete object.
+[*****] BUG: load_news(): # not found
+[*****] BUG: Fread_stance: fopen
+[*****] BUG: fread_word: EOF encountered on read.
+
+[*****] BUG: Cannot open members.dat for reading
+[*****] BUG: fread_word: EOF encountered on read.
+
+[*****] BUG: Cannot load house file: ~ÿ

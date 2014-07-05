@@ -1,0 +1,82 @@
+Mon Oct  9 09:06:26 2006 :: Booting Database
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+Mon Oct  9 09:06:26 2006 :: [*****] BOOT: ---------------------[ Boot Log ]--------------------
+Mon Oct  9 09:06:26 2006 :: Loading commands
+Mon Oct  9 09:06:26 2006 :: Loading sysdata configuration...
+Mon Oct  9 09:06:26 2006 :: Loading socials
+Mon Oct  9 09:06:26 2006 :: Loading skill table
+Mon Oct  9 09:06:26 2006 :: Sorting skill table...
+Mon Oct  9 09:06:26 2006 :: Remapping slots to sns
+Mon Oct  9 09:06:26 2006 :: Loading classes
+Mon Oct  9 09:06:26 2006 :: Loading races
+Mon Oct  9 09:06:26 2006 :: Loading extended news data
+load_news(): cannot open file: No such file or directory
+Mon Oct  9 09:06:26 2006 :: Loading stance data
+Mon Oct  9 09:06:26 2006 :: [*****] BUG: Fread_stance: fopen
+../system/stances.dat: No such file or directory
+Mon Oct  9 09:06:26 2006 :: Loading herb table
+Mon Oct  9 09:06:26 2006 :: Loading tongues
+Mon Oct  9 09:06:26 2006 :: Making wizlist
+Mon Oct  9 09:06:26 2006 :: Making retiredlist
+Mon Oct  9 09:06:26 2006 :: Initializing request pipe
+Mon Oct  9 09:06:26 2006 :: Initializing random number generator
+Mon Oct  9 09:06:26 2006 :: Setting time and weather
+Mon Oct  9 09:06:26 2006 :: Assigning gsn's
+Mon Oct  9 09:06:26 2006 :: Reading in area files...
+(help.are)
+(imc-help.are)
+(ice-help.are)
+gods.are      : Rooms:  1200 - 1201  Objs:  1200 - 1200  Mobs:  1200 - 1200
+limbo.are     : Rooms:     1 - 43    Objs:     2 - 99    Mobs:     1 - 99
+newacad.are   : Rooms: 10300 - 10499 Objs: 10300 - 10499 Mobs: 10300 - 10499
+newgate.are   : Rooms:   100 - 199   Objs:   100 - 199   Mobs:   100 - 199
+newdark.are   : Rooms: 21000 - 21499 Objs: 21000 - 21435 Mobs: 21000 - 21499
+haon.are      : Rooms:  6000 - 6156  Objs:  6000 - 6155  Mobs:  6000 - 6117
+midennir.are  : Rooms:  3500 - 3590  Objs:  3500 - 3550  Mobs:  3500 - 3550
+sewer.are     : Rooms:  7001 - 7445  Objs:  7190 - 7310  Mobs:  7000 - 7206
+redferne.are  : Rooms:  7900 - 7918  Objs:  7909 - 7911  Mobs:  7900 - 7900
+grove.are     : Rooms:  8901 - 8999  Objs:  8900 - 8919  Mobs:  8900 - 8911
+dwarven.are   : Rooms:  6500 - 6554  Objs:  6502 - 6519  Mobs:  6500 - 6517
+daycare.are   : Rooms:  6601 - 6651  Objs:  6600 - 6647  Mobs:  6600 - 6610
+grave.are     : Rooms:  3600 - 3651  Objs:  3600 - 3613  Mobs:  3600 - 3605
+chapel.are    : Rooms:  3405 - 3475  Objs:  3400 - 3430  Mobs:  3400 - 3416
+astral.are    : Rooms:   800 - 899   Objs:   800 - 899   Mobs:   800 - 899
+Build.are     : Rooms:  9500 - 9589  Objs:     0 - 0     Mobs:     0 - 0
+pixie.are     : Rooms:  2070 - 2099  Objs:  2070 - 2076  Mobs:  2070 - 2073
+export.are    : Rooms:  9810 - 9899  Objs:  9810 - 9899  Mobs:  9800 - 9899
+srefuge.are   : Rooms:  1500 - 1599  Objs:  1500 - 1599  Mobs:  1500 - 1599
+manor.are     : Rooms:  2400 - 2499  Objs:  2400 - 2499  Mobs:  2405 - 2484
+unholy.are    : Rooms:  2101 - 2172  Objs:  2101 - 2150  Mobs:  2101 - 2120
+gallery.are   : Rooms: 24800 - 24899 Objs: 24800 - 24899 Mobs: 24800 - 24899
+Mon Oct  9 09:06:26 2006 :: Fixing exits
+Mon Oct  9 09:06:26 2006 :: Initializing economy
+Mon Oct  9 09:06:26 2006 :: Randomizing stance data
+Mon Oct  9 09:06:26 2006 :: Resetting areas
+Resetting: gods.are
+Resetting: limbo.are
+Resetting: newacad.are
+Resetting: newgate.are
+Resetting: newdark.are
+Resetting: haon.are
+Resetting: midennir.are
+Resetting: sewer.are
+Resetting: redferne.are
+Resetting: grove.are
+Resetting: dwarven.are
+Resetting: daycare.are
+Resetting: grave.are
+Resetting: chapel.are
+Resetting: astral.are
+Resetting: Build.are
+Resetting: pixie.are
+Resetting: export.are
+Resetting: srefuge.are
+Resetting: manor.are
+Resetting: unholy.are
+Resetting: gallery.are
+Mon Oct  9 09:06:26 2006 :: Loading buildlist
+Mon Oct  9 09:06:26 2006 :: Loading boards
+Mon Oct  9 09:06:26 2006 :: ../boards/immortal.brd
+Mon Oct  9 09:06:26 2006 :: ../boards/highgod.brd
+Mon Oct  9 09:06:26 2006 :: Loading vault list
+../vault/vault.lst: No such file or directory

@@ -1,0 +1,3 @@
+[*****] BOOT: ---------------------[ Boot Log ]--------------------
+[*****] BOOT: Cannot open homeaccessories.dat. Aborting loadup of accessories data.
+[*****] BOOT: Cannot open homebuy.dat. Aborting loadup of home auction data.
