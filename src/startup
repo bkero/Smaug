@@ -13,6 +13,10 @@ if [ -e shutdown.txt ]; then
     rm -f shutdown.txt
 fi
 
+if [ ! -p ../system/REQUESTS ]; then
+    mkfifo ../system/REQUESTS
+fi
+
 I=1000
 while [ -e ../log/${I}.log ]; do
 	I=$(expr $I + 1)
