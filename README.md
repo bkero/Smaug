@@ -9,6 +9,7 @@ To fetch:
 To compile:
 
 > $ cd smaug/src
+
 > $ make
 
 To run:
@@ -16,6 +17,7 @@ To run:
 >  $ ./startup
 
 To connect:
+
 > $ telnet localhost 4000
 
 Getting started:
@@ -32,6 +34,8 @@ Getting started:
 > $ sed -i 's/Level        2/Level       65' ../player/b/Bkero
 
   - Start the MUD up again (./startup)
+
+> $ telnet localhost 4000 # Log in and have fun!
 
 Relevant documentation available at:
   - doc/SMAUGDOC
